@@ -1,12 +1,25 @@
-<div class="center jumbotron">
-  <h1>Welcome to Chitter</h1>
+<% if logged_in? %>
+	<div class="row">
+	  <aside class="col-md-4">
+	    <section class="user_info">
+	      <%= render 'shared/user_info' %>
+	    </section>
+	    <section class="micropost_form">
+	      <%= render 'shared/micropost_form' %>
+	    </section>
+	  </aside>
+	</div>
+<% else %>
+	<div class="center jumbotron">
+	  <h1>Welcome to Chitter</h1>
 
-  <h2>
-    This application includes examples of all the major features of Rails, including models, views, controllers, templates, partials, filters, validations, callbacks, has_many/belongs_to and has_many :through associations, security, testing, and deployment.
-  </h2>
+	  <h2>
+	    This application includes examples of all the major features of Rails, including models, views, controllers, templates, partials, filters, validations, callbacks, has_many/belongs_to and has_many :through associations, security, testing, and deployment.
+	  </h2>
 
-  <%= link_to "Sign up now!", signup_path , class: "btn btn-lg btn-primary" %>
-</div>
+	  <%= link_to "Sign up now!", signup_path , class: "btn btn-lg btn-primary" %>
+	</div>
 
-<%= link_to image_tag("photo.png", alt: "Hire Me logo"),
-            'https://about.me/asus7' %>
+	<%= link_to image_tag("photo.png", alt: "Hire Me logo"),
+	            'https://about.me/asus7' %>
+<% end %>
