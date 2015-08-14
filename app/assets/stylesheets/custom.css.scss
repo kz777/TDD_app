@@ -45,6 +45,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color:  #fed136;
 }
 
 h2 {
@@ -52,8 +53,8 @@ h2 {
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: normal;
-  color: $gray-light;
+  font-weight: bold;
+  color:  #858832;
 }
 
 p {
@@ -78,6 +79,17 @@ p {
   }
  }
 
+.btn-primary {
+    border-color: #fed136;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color:  #fed136;
+}
+
+
 /* footer */
 
 footer {
@@ -86,13 +98,14 @@ footer {
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
-  	color: $gray;
+  	color: white;
 	&:hover {
-  		color: $gray-darker;
+  		color: #4E4E73;
   	}
 }
 	small {
 	  float: left;
+    color: white;
 	}
 	ul {
 	  float: right;

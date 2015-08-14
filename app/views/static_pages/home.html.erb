@@ -17,7 +17,9 @@
         </div>
 	</div>
 <% else %>
-	<div class="center jumbotron">
+
+
+	<div class="center ">
 	  <h1>Welcome to Chitter</h1>
 
 	  <h2>
@@ -29,4 +31,20 @@
 
 	<%= link_to image_tag("photo.png", alt: "Hire Me logo"),
 	            'https://about.me/asus7' %>
+
+	<style>
+		body {
+			  background-image: url(../assets/header.jpg);
+			  background-repeat: no-repeat;
+			  background-position: center;
+			  background-size: cover;
+			  background-color: #BCD6F8;
+			  background-image {
+			    width: 100%;
+			    display: block;
+			  }
+			}
+	
+	</style>
+
 <% end %>
